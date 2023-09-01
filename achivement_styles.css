@@ -12,6 +12,9 @@ body {
     background: var(--dark-colour, #2E333A);
 
 }
+.container-bg{
+    display: flex;
+}
 nav{
     z-index: 100;
     position: fixed;

@@ -9,8 +9,9 @@ body {
     max-width: 100%;
     max-height: 100%;
     color: white;
-    background-image: linear-gradient(#2E333A 20%,  #000000, #2E333A);
+    background: linear-gradient(#2E333A 20%,  #000000, #2E333A),url('images/page1/group-33538.png');
 }
+
 button{
     border: none;
     background: none;
@@ -25,41 +26,18 @@ button{
 
 body::after {
     content: "";
-    position: absolute;
-    top: 420px;
-    left: 1280px;
-    width: 590px;
-    height: 571px;
-    background-image: url('images/page1/1.svg');
     z-index: 0;
-}
-body::after:nth-child(2)  {
-    content: "";
     position: absolute;
-    top: 420px;
-    left: 1280px;
-    width: 590px;
-    height: 571px;
-    background-image: url('images/page1/2.svg');
-    z-index: 0;
-}
-
-body::after:nth-child(3) {
-    content: "";
-    position: absolute;
-    top: 420px;
-    left: 1280px;
-    width: 590px;   
-    height: 571px;
-    background-image: url('images/page1/3.svg');
-    z-index: 0;
-}
-
-body::before,
-.wrapper::after {
+    top: 400px;
+    left: 500px;
+    width: 1828.883px;
+    height: 1065.231px;
+    background-image: url('images/page1/group-33538.png');
+    mix-blend-mode:soft-light;
     background-repeat: no-repeat;
-    background-size: cover;
+    z-index: -1;
 }
+
 .wrapper2{
     height: fit-content;
     display: flex;
@@ -185,32 +163,22 @@ nav ul{
     line-height: 130%;
 }
 .content-row{
-    z-index: 100;
-    width: 100%;
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    margin-top: 185px;
-    padding-bottom: 60.34px;
+display: flex;
+width: 1920px;
+padding: 20px;
+padding: 100px 300px 0px 300px;
+justify-content: center;
+align-items: center;
+gap: 80px;
 }
 .content-box{
-    z-index: 100;
-    width: 300px;
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 }
 .ctbx-head{
-    z-index: 100;
     display: flex;
     padding: 10px;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     color: var(--light-text, #FFF);
@@ -221,15 +189,18 @@ nav ul{
     line-height: 130%; 
 }
 .content-box p{
-    z-index: 100;
-    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
     color: var(--light-text, #FFF);
+
+/* Poppins/18/Medium */
     font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 130%; 
-    
+    line-height: 130%; /* 23.4px */
 }
 .card{
     z-index: 100;
