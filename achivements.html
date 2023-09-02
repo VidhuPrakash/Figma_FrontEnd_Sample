@@ -267,11 +267,10 @@
             </div>
           </form>
           <div class="text">Collapsed</div>
-          <div class="slider-box">
-            <div class="slider">
-              <img src="images/page3/slider.svg" alt="" />
-            </div>
-          </div>
+          <label class="switch">
+            <input type="checkbox" onclick="CollapsedOrNone()">
+            <span class="slider round"></span>
+          </label>
           <div class="container"></div>
         </div>
         <div class="right-menu">
@@ -281,8 +280,8 @@
           <div class="addnew-btn">Add new account</div>
         </div>
       </div>
-      <!-- Cards Container-->
-      <div class="cards-container">
+      <!-- Cards Container none collapsed-Active-->
+      <div class="cards-container" id="NonColl">
         <!-- First special card with graph -->
         <div class="card">
           <div class="first-card-head">
@@ -913,6 +912,125 @@
           </div>
         </div>
       </div>
+      <div class="collapsed-container" id="Coll">
+        <div class="contents">
+          <div class="data-title">
+            <div class="title-container">
+              <div class="title">Names</div>
+              <div class="title">Today</div>
+              <div class="title">ELO</div>
+              <div class="title">Scholar(<div class="blue">20%</div>)</div>
+              <div class="title">Lifetime</div>
+              <div class="title">Unclaimed SLP</div>
+            </div>
+          </div>
+          <!-- collapsed tracker cards -->
+          <div class="tracker-card">
+            <div class="head-container">
+              <div class="names">
+                <div class="head">
+                  <button class="edit-btn"><img src="images/page3/Group (1).svg" alt=""></button>
+                  <div class="user-name">Delvin</div>
+                </div>
+                <div class="axies">Axies:<div class="axies-number">3</div></div>
+              </div>
+              <div class="today">
+                <div class="top blue">10 SLP<div class="card-small-text">~2.00 USD</div></div>
+                <div class="middle mid-gray">Average:<div class="card-mid-text">20 SLP</div><div class="card-small-text">~0.500 USD</div> </div>
+                <div class="bottom">Yesterday:<div class="card-midsmall-text">5 SLP</div><div class="card-small-text">~0.100 USD</div></div>
+              </div>
+              <div class="elo">
+                <div class="top blue"><img src="images/page3/victory-blue.svg" alt=""> 983<div class="card-small-text">~1 SLP/win</div></div>
+                <div class="middle mid-gray">Manager:<div class="card-mid-text">10 SLP</div><div class="card-small-text">~0.18 USD</div></div>
+                <div class="mid-gray">(100%)</div>
+              </div>
+              <div class="other">
+                <div class="top blue">40 SLP<div class="card-small-text">~0.40 USD</div> </div>
+                <div class="middle mid-gray">Adventure SLP:<div class="card-mid-text">0/50</div></div>
+              </div>
+              <div class="other">
+                <div class="top blue">34 SLP<div class="card-small-text">~0.61 USD</div> </div>
+                <div class="middle mid-gray">Total:<div class="card-mid-text">20 SLP</div><div class="card-small-text">~0.71 USD</div></div>
+              </div>
+              <div class="other">
+                <div class="top blue">74 SLP<div class="card-small-text">~7.61 USD</div> </div>
+                <div class="middle mid-gray">In Ronin:<div class="card-mid-text">20 SLP</div><div class="card-small-text">~0.71 USD</div></div>
+              </div>
+            </div>
+            <button class="sub-container" onclick="">Details</button>
+          </div>
+          <div class="tracker-card">
+            <div class="head-container">
+              <div class="names">
+                <div class="head">
+                  <button class="edit-btn"><img src="images/page3/Group (1).svg" alt=""></button>
+                  <div class="user-name">Delvin</div>
+                </div>
+                <div class="axies">Axies:<div class="axies-number">3</div></div>
+              </div>
+              <div class="today">
+                <div class="top blue">10 SLP<div class="card-small-text">~2.00 USD</div></div>
+                <div class="middle mid-gray">Average:<div class="card-mid-text">20 SLP</div><div class="card-small-text">~0.500 USD</div> </div>
+                <div class="bottom">Yesterday:<div class="card-midsmall-text">5 SLP</div><div class="card-small-text">~0.100 USD</div></div>
+              </div>
+              <div class="elo">
+                <div class="top blue"><img src="images/page3/victory-blue.svg" alt=""> 983<div class="card-small-text">~1 SLP/win</div></div>
+                <div class="middle mid-gray">Manager:<div class="card-mid-text">10 SLP</div><div class="card-small-text">~0.18 USD</div></div>
+                <div class="mid-gray">(100%)</div>
+              </div>
+              <div class="other">
+                <div class="top blue">40 SLP<div class="card-small-text">~0.40 USD</div> </div>
+                <div class="middle mid-gray">Adventure SLP:<div class="card-mid-text">0/50</div></div>
+              </div>
+              <div class="other">
+                <div class="top blue">34 SLP<div class="card-small-text">~0.61 USD</div> </div>
+                <div class="middle mid-gray">Total:<div class="card-mid-text">20 SLP</div><div class="card-small-text">~0.71 USD</div></div>
+              </div>
+              <div class="other">
+                <div class="top blue">74 SLP<div class="card-small-text">~7.61 USD</div> </div>
+                <div class="middle mid-gray">In Ronin:<div class="card-mid-text">20 SLP</div><div class="card-small-text">~0.71 USD</div></div>
+              </div>
+            </div>
+            <button class="sub-container" onclick="">Details</button>
+          </div>          
+          <div class="tracker-card">
+            <div class="head-container">
+              <div class="names">
+                <div class="head">
+                  <button class="edit-btn"><img src="images/page3/Group (1).svg" alt=""></button>
+                  <div class="user-name">Delvin</div>
+                </div>
+                <div class="axies">Axies:<div class="axies-number">3</div></div>
+              </div>
+              <div class="today">
+                <div class="top blue">10 SLP<div class="card-small-text">~2.00 USD</div></div>
+                <div class="middle mid-gray">Average:<div class="card-mid-text">20 SLP</div><div class="card-small-text">~0.500 USD</div> </div>
+                <div class="bottom">Yesterday:<div class="card-midsmall-text">5 SLP</div><div class="card-small-text">~0.100 USD</div></div>
+              </div>
+              <div class="elo">
+                <div class="top blue"><img src="images/page3/victory-blue.svg" alt=""> 983<div class="card-small-text">~1 SLP/win</div></div>
+                <div class="middle mid-gray">Manager:<div class="card-mid-text">10 SLP</div><div class="card-small-text">~0.18 USD</div></div>
+                <div class="mid-gray">(100%)</div>
+              </div>
+              <div class="other">
+                <div class="top blue">40 SLP<div class="card-small-text">~0.40 USD</div> </div>
+                <div class="middle mid-gray">Adventure SLP:<div class="card-mid-text">0/50</div></div>
+              </div>
+              <div class="other">
+                <div class="top blue">34 SLP<div class="card-small-text">~0.61 USD</div> </div>
+                <div class="middle mid-gray">Total:<div class="card-mid-text">20 SLP</div><div class="card-small-text">~0.71 USD</div></div>
+              </div>
+              <div class="other">
+                <div class="top blue">74 SLP<div class="card-small-text">~7.61 USD</div> </div>
+                <div class="middle mid-gray">In Ronin:<div class="card-mid-text">20 SLP</div><div class="card-small-text">~0.71 USD</div></div>
+              </div>
+            </div>
+            <button class="sub-container" onclick="">Details</button>
+          </div>
+        </div>
+        
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

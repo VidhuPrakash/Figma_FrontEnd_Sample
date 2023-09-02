@@ -82,3 +82,23 @@ signUpAccButton.addEventListener("click", function() {
   // Scroll to the target element
   signUpAcc.scrollIntoView({ behavior: "smooth" });
 });
+
+//function for collapsed list
+NonColl = document.getElementsById("NonColl");
+Coll = document.getElementsById("Coll");
+
+// Function to show Cards
+function CollapsedOrNone() {
+  if(NonColl.style.display == "None"||Coll.style.display == "block"){
+    NonColl.style.display = "grid";
+    Coll.style.display = "None";
+    console.log("NonColl working")
+  }
+  else{
+    NonColl.style.display = "None";
+    Coll.style.display = "block";
+    console.log("Clicked");
+  }
+}
+
+
